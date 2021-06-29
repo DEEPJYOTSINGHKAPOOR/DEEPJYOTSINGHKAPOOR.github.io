@@ -1,0 +1,31 @@
+<section class="blog-grid-section container">
+    <div class="row justify-content-around p-4">
+        <% posts.forEach(function(post){ %>
+            <div class="col-4 h-100  p-2">
+                <div class="card ">
+                    <img class="card-img-top" src="/images/email_spam_vs_no_spam.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%= post.blogTitle %>
+                        </h5>
+                        <p class="card-text">
+                            <%= post.blogContent %>
+                        </p>
+                        <a href="/blogs/<%=post.blogTitle%>" class="btn btn-primary">Explore</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <span class="author-name-text">
+                            <%= post.blogAuthorName %>
+                        </span>
+                        <br>
+                        <span>
+                            <%= post.blogPublishDate %>
+                        </span>
+                        <span> . <%= post.blogReadTime %></span>
+                    </div>
+                </div>
+
+            </div>
+            <% }); %>
+    </div>
+</section>

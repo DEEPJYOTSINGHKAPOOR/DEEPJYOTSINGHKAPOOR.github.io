@@ -1,0 +1,271 @@
+
+
+
+body{
+    margin: 0;
+    background-image: url('/images/bg-white.jpg');
+    scroll-behavior: smooth;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    border-style: none;
+}
+
+/* *GENERAL PURPOSE CLASSES */
+  .social-text{
+      padding-left: 10px;
+  }
+  
+.text-links{
+  
+    text-shadow: 1px 1px;
+}
+
+
+
+.page-body{
+    flex-grow: 1;
+}
+
+
+
+
+  .top-down-auto{
+      margin-top: auto;
+      margin-bottom: auto;
+  }
+
+
+
+  .person-name{
+    font-size: 5.5rem;
+  }
+
+  /* * ARROW SECTION */
+  .arrow-down{
+      width:  100%;
+      margin: 0 auto;
+      text-align: center;
+      position: absolute;
+      bottom: 100px;
+      
+  }
+
+/* !tells that add after above div.   - https://www.youtube.com/watch?v=HisZIORbN0s*/
+  .arrow-down::after{
+      content: "";
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border-right: 4px solid #007bff;
+      border-bottom: 4px solid #007bff ;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      -webkit-animation: 1.5s arrow infinite ease;
+      animation: 1.5s arrow infinite ease ;
+      
+      /* content: "-hellp"; */
+  }
+
+
+  @-webkit-keyframes arrow{
+      0%, 100%{
+          top: 50px;
+      }
+      50%{
+          top: 80px; 
+      }
+  }
+
+  @keyframes arrow{
+    0%, 100%{
+        top: 50px;
+    }
+    50%{
+        top: 80px; 
+    }
+}
+
+
+
+/* *LANDING SECTION */
+.home-section{
+    /* height: 100vh;
+    width: 100%;
+    clear: both;
+    
+    position: fixed; */
+
+
+    position: relative;
+    z-index: 0;
+    background: rgb(255, 255, 255);
+    padding: 110px 0px;
+    height: 100vh;
+}
+
+
+
+/* *About ME Section*/
+.about-section{
+    /* height: 100vh;
+    width: 100%;
+    clear: both;
+    padding-top: 70px; */
+    
+    /* position: relative; */
+    /* z-index: 0; */
+    /* height: 100vh; */
+    background: rgb(255, 255, 255);
+    padding: 110px 0px;
+}
+
+.about-card{
+    margin: auto;
+}
+
+.card-text{
+    text-align: center;
+    font-size: 3rem;
+}
+
+#about-me-text-id{
+    font-size: 5rem;
+
+}
+
+
+.avatar-circle{
+    border-radius: 50%;
+    width: 270px;
+    height: 270px;
+    margin: auto;
+    /* object-fit: cover; */
+    /* height: 30%; */
+    /* width: 30%; */
+}
+
+
+
+
+
+#profile{
+    text-align: center;
+    padding: 30px 10px;
+    position: relative;
+}
+
+
+.section-subheading{
+    font-size: 1.25rem;
+    font-family: montserrat,sans-serif;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+p.institution{
+    font-size: 0.8rem;
+}
+
+
+
+
+
+/* * Experience Section */
+
+
+.experience-section{
+    /* padding-top: 70px;
+    
+    width: 100%;
+    clear: both; */
+    
+    /* position: relative; */
+    /* z-index: 0; */
+    position: relative;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+    padding: 110px 0px;
+
+}
+.experience .m-2 .border.exp-fill {
+    background-color: #1565c0!important;
+}
+
+.experience .m-2 .border, .experience .col.border-right {
+    border-color: #1565c0!important;
+}
+
+.section-bg {
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.section-bg:nth-last-child(2n){
+     background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial; 
+    background-color: rgb(247, 247, 247); 
+    /* background-color: blue; */
+}
+.section-bg:nth-last-child(2n+1){
+    /* background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial; */
+    /* background-repeat-y: initial; */
+    /* background-color: rgb(247, 247, 247); */
+    background-color: red;
+}
+
+#info-icon{
+    font-size: 1rem;
+    border-radius: 50%;
+}
+
+.alert{
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    color: #12537e;
+    background-color: #f6fbfe;
+    border-color: #1976d2;
+}
+
+.article-style {
+    overflow: hidden;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+#proj-ts-image{
+    width: 900px;
+    height: 400px;
+}
+.project-desc-text{
+    font-size: 1rem ;
+}

@@ -1,0 +1,23 @@
+/* 
+.about-section{
+    background-color: #007bff;
+    color: #fff;
+} */
+
+/*
+.about-card{
+    background-color: #007bff;
+}
+*/
+
+.card-text{    
+    color: #fff;
+}
+
+.text-links{
+    color : #154a82;
+}
+
+p.institution{
+    color: grey;
+}

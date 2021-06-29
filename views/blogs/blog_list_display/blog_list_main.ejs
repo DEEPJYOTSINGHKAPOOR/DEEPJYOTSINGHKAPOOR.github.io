@@ -1,0 +1,4 @@
+<%- include('./partials/header',{cssFileName: "blog" }) %>
+    <%- include('./blog_list_header'); %>
+        <%- include('./blog_list_grid_body',{posts:posts}); %>
+            <%- include('./partials/footer',{jsFileName: "home" }) %>

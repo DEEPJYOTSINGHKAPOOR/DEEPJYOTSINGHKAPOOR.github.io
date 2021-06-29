@@ -1,0 +1,19 @@
+.compose-blog-section{
+    margin-top: 20px; 
+}
+
+
+#blogContent1 {
+    margin-top: 2px;
+    padding: 2px 3px;
+    width: 90%;    
+    height: 100px;
+}
+
+
+textarea {
+    resize: none;
+    overflow: hidden;
+    min-height: 50px;
+    max-height: 100px;
+}

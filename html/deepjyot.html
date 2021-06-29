@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJ</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/deepjyot.css">
+
+    <link rel="stylesheet" href="/css/light_theme.css">
+
+</head>
+
+<body>
+    <!-- ! -->
+    <div class="page-header">
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+            <div class="container-xl">
+
+
+                <div class="d-none d-lg-inline-flex">
+                    <a class="navbar-brand" href="/about"></a>
+                </div>
+
+
+
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content"
+                    aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fa fa-bars"></i></span>
+                </button>
+
+
+                <!-- !Wrap aside in mobile view. -->
+                <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+                    <a class="navbar-brand" href="/">Deepjyot</a>
+                </div>
+
+
+
+                <div class="navbar-collapse main-menu-item collapse justify-content-center" id="navbar-content">
+
+
+                    <ul class="navbar-nav d-md-inline-flex">
+                        <!-- !Home -->
+                        <li class="nav-item show" id="home-nav-li">
+                            <!-- <a class="nav-link" href="#home-section" data-target="#home-section"><span>Home</span></a> -->
+                            <a class="nav-link" href="#home-section"><span>Home</span></a>
+                        </li>
+                        <!-- !About -->
+                        <li class="nav-item" id="aboutme-nav-li">
+                            <!-- <a class="nav-link" href="#aboutme-section" data-target="#aboutme-section"><span>About Me</span></a> -->
+                            <a class="nav-link" href="#aboutme-section"><span>About Me</span></a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link " href="/#news" data-target="#news"><span>News</span></a>
+                        </li> -->
+
+                        <li class="nav-item" id="experience-nav-li">
+                            <a class="nav-link" href="#experience-section"
+                                data-target="#experience-section"><span>Experience</span></a>
+                        </li>
+
+
+                        <li class="nav-item" id="projects-nav-li">
+                            <a class="nav-link" href="#projects-section"
+                                data-target="#projects-section"><span>Projects</span></a>
+                        </li>
+
+
+                        <li class="nav-item" id="publications-nav-li">
+                            <a class="nav-link " href="#publications"
+                                data-target="#publications"><span>Publications</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="#posts" data-target="#posts"><span>Posts</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="#talks" data-target="#talks"><span>Talks</span></a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+                    <li class="nav-item dropdown theme-dropdown">
+                        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true"
+                            aria-label="Display preferences">
+                            <i class="fa fa-moon-o" aria-hidden="true"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item js-set-theme-light">
+                                <span>Light</span>
+                            </a>
+                            <a href="#" class="dropdown-item js-set-theme-dark dropdown-item-active">
+                                <span>Dark</span>
+                            </a>
+                            <!-- <input type="checkbox" name="theme" id="switch"><label for="switch">Toggle</label> -->
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+    </div>
+
+    <div class="page-body">
+        <span class="js-widget-page d-none"></span>
+        <section class="home-section" id="home-section">
+            <div class="section-bg"></div>
+            <!-- //!This is the row , h-100 means height 100% of its parent.-->
+            <div class="row h-100">
+
+                <!-- //! col of size 8/12 -->
+                <div class="col-sm-12 top-down-auto">
+
+                    <!-- //!Card has header and will have  -->
+                    <div class="car" style="width: 100%;">
+                        <h1 class="text-center person-name">Deepjyot Singh</h1>
+                        <!-- //! card body -->
+                        <div class="card-body">
+
+                            <!-- //! Container for buttons -->
+                            <div class="container">
+                                <!-- //! Rows of buttons -->
+                                <div class="row">
+
+                                    <!-- //! Button col for insta -->
+                                    <div class="col-lg-2 col-md-6">
+                                        <a href="https://www.instagram.com/deepjyotsinghkapoor/" target="_blank">
+                                            <button class="btn btn-primary form-control  btn-block fa fa-instagram">
+                                                <span class="social-text">Instagram</span> </button>
+                                        </a>
+
+                                    </div>
+
+                                    <!-- //! Button col for FB -->
+                                    <div class="col-lg-2 col-md-6">
+                                        <a href="https://www.facebook.com/deepjyotsingh.kapoor.3/" target="_blank">
+                                            <button id="btnSubmit"
+                                                class="btn btn-primary form-control btn-block fa fa-facebook">
+                                                <span class="social-text">Facebook</span> </button>
+                                        </a>
+                                    </div>
+
+                                    <!-- //! Button col for GitHub -->
+                                    <div class="col-lg-2 col-md-6">
+                                        <a href="https://github.com/DEEPJYOTSINGHKAPOOR/" target="_blank">
+                                            <button id="btnSubmit"
+                                                class="btn btn-primary form-control btn-block fa fa-github">
+                                                <span>GitHub</span>
+                                            </button>
+                                        </a>
+                                    </div>
+
+
+                                    <!-- //! Button col for Linkedin -->
+                                    <div class="col-lg-2 col-md-6">
+                                        <a href="https://www.linkedin.com/in/deepjyot-singh-kapoor-631632177/"
+                                            target="_blank">
+                                            <button id="btnSubmit"
+                                                class="btn btn-primary form-control btn-block fa fa-linkedin"><span
+                                                    class="social-text">Linkedin</span></button>
+                                        </a>
+
+                                    </div>
+
+                                    <!-- //! Button col for Email -->
+
+                                    <div class="col-lg-2 col-md-6">
+                                        <a href="mailto:kapoordeepjyotsingh29@gmail.com" target="_blank">
+                                            <button id="btnSubmit"
+                                                class="btn btn-primary form-control btn-block fa fa-envelope"><span
+                                                    class="social-text">Email</span></button>
+                                        </a>
+                                    </div>
+
+                                    <!-- //! Button col for Twitter -->
+                                    <div class="col-lg-2 col-md-6">
+                                        <a href="https://twitter.com/KapoorDeepjyot/" target="_blank">
+                                            <button id="btnSubmit"
+                                                class="btn btn-primary form-control btn-block fa fa-twitter"><span
+                                                    class="social-text">Twitter</span></button>
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- <section>
+            <div class="row">
+                <div class="arrow-down">
+                </div>
+            </div>
+
+
+        </section> -->
+
+
+
+        <section class="about-section" id="aboutme-section">
+            <div class="section-bg"></div>
+            <div class="container">
+                <div class="row">
+                    <!-- !Profile: [image,designation] Take /4 for large screen and full for  md,sm-->
+                    <div class="col-12 col-lg-4">
+                        <div id="profile">
+                            <!-- !image :circular -->
+                            <img class="rounded-circle avatar avatar-circle " src="/images/deepjyot.jpeg"
+                                alt="image-error">
+                            <div class="image-title">
+                                <h2>Deepjyot Singh</h2>
+                                <h3>Intern</h3>
+                                <h3> <a href="https://www.cognizant.com/" rel="noopener" target="_blank">
+                                        <span class="text-links">Cognizant</span></a> </h3>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-lg-8">
+                        <h1>About Me</h1>
+
+                        <div class="article-style">
+                            <p>I am a senior year undergraduate student at <a
+                                    href="http://cms.sinhgad.edu/sinhgad_engineering_institutes/skncoe_vadgaon/institute_details.aspx#"
+                                    target="_blank" rel="noopener">SKNCOE, Pune</a>, pursuing a major in Computer
+                                Science engineering. I spend most of my time making beautiful
+                                applications with flutter. Currently, I am a Intern at <a
+                                    href="https://www.cognizant.com/" target="_blank" rel="noopener">Cognizant</a>.
+                                I’ve also been working as a Project Assistant at the Probuzz<a
+                                    href="https://probuzz.co.in/" target="_blank" rel="noopener"></a>
+                                during my undergraduate studies. I also like to do competitive programming
+                                and I'm a 5⭐ coder at <a href="https://www.hackerrank.com/YourProgrammer/"
+                                    target="_blank" rel="noopener">Hackerrank</a>.</p>
+
+                            <p> I am ML enthusiast and right now doing research in NLP. I had also been vice president
+                                of
+                                our
+                                college club named <a href="https://codinghubteam.github.io/about.html" target="_blank"
+                                    rel="noopner">Coding Hub</a>. Apart from the above mentioned
+                                technical interests, I also share a keen interest towards Music, Badminton &amp;
+                                Cricket.
+                                I had played badminton till state-level during my school days.
+                            </p>
+                        </div>
+
+                        <div class="row">
+
+
+                            <div class="col-md-5">
+                                <div class="section-subheading">Interests</div>
+                                <ul class="ul-interests">
+                                    <li>Natural Language
+                                        Processing</li>
+
+                                    <li>Deep Learning</li>
+
+                                    <li>App Development</li>
+
+                                    <li>Web Development</li>
+
+                                </ul>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="section-subheading">Education</div>
+                                <ul class="ul-edu fa-ul">
+
+                                    <li>
+                                        <i class="fa-li fa fa-graduation-cap"></i>
+                                        <div class="description">
+                                            <p class="course">B.E. in Computer Science Engineering, 2021</p>
+                                            <p class="institution">SKNCOE,Pune</p>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+
+        <!-- !Experience section. -->
+        <section class="experience-section" id="experience-section">
+            <div class="section-bg"></div>
+
+            <div class="container">
+                <div class="row  ">
+
+
+                    <div
+                        class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+                        <h1 class="mb-0">Experience</h1>
+
+                    </div>
+                    <div class="col-12 col-lg-8">
+
+                        <!-- !experience -1 row -->
+                        <div class="row experience">
+
+                            <!-- !For drawing line and dot content.  -->
+                            <div class="col-auto text-center flex-column d-none d-sm-flex">
+                                <div class="row h-50">
+                                    <div class="col ">&nbsp;</div>
+                                    <div class="col">&nbsp;</div>
+                                </div>
+                                <div class="m-2">
+                                    <span class="badge badge-pill border exp-fill">&nbsp;</span>
+                                </div>
+                                <div class="row h-50">
+                                    <div class="col border-right">&nbsp;</div>
+                                    <div class="col">&nbsp;</div>
+                                </div>
+                            </div>
+
+                            <!-- ! Row content experience -will hold the card.  -->
+                            <div class="col py-2">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="section-subheading card-title exp-title text-muted mt-0 mb-1">Intern
+                                        </div>
+                                        <div class="section-subheading card-title exp-company text-muted my-0"><a
+                                                href="https://www.cognizant.com/" target="_blank"
+                                                rel="noopener">Cognizant</a>
+                                        </div>
+                                        <div class="text-muted exp-meta">
+                                            Apr 2021 –
+
+                                            Present
+
+
+                                            <span class="middot-divider"></span>
+                                            <span> . Chennai, IN</span>
+
+                                        </div>
+                                        <br>
+                                        <div class="card_text">Working as Full Stack Intern & devloping good projects.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row experience">
+
+                            <div class="col-auto text-center flex-column d-none d-sm-flex">
+                                <div class="row h-50">
+                                    <div class="col border-right">&nbsp;</div>
+                                    <div class="col">&nbsp;</div>
+                                </div>
+                                <div class="m-2">
+                                    <span class="badge badge-pill border">&nbsp;</span>
+                                </div>
+                                <div class="row h-50">
+                                    <div class="col border-right">&nbsp;</div>
+                                    <div class="col">&nbsp;</div>
+                                </div>
+                            </div>
+
+                            <div class="col py-2">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="section-subheading card-title exp-title text-muted mt-0 mb-1">
+                                            Project
+                                            Assistant</div>
+                                        <div class="section-subheading card-title exp-company text-muted my-0"><a
+                                                href="https://probuzz.co.in/" target="_blank" rel="noopener">Probuzz</a>
+                                        </div>
+                                        <div class="text-muted exp-meta">
+                                            Jan 2020 –
+
+                                            Mar
+
+
+                                            <span class="middot-divider"></span>
+                                            <span>Pune, IN</span>
+
+                                        </div>
+                                        <br>
+                                        <div class="card_text">Developed a Mobile Application for client which has over
+                                            5k+
+                                            downloads.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row experience">
+
+                            <div class="col-auto text-center flex-column d-none d-sm-flex">
+                                <div class="row h-50">
+                                    <div class="col border-right">&nbsp;</div>
+                                    <div class="col">&nbsp;</div>
+                                </div>
+                                <div class="m-2">
+                                    <span class="badge badge-pill border ">&nbsp;</span>
+                                </div>
+                                <!-- <div class="row h-50">
+                                <div class="col border-right">&nbsp;</div>
+                                <div class="col">&nbsp;</div>
+                            </div> -->
+                            </div>
+
+                            <div class="col py-2">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="section-subheading card-title exp-title text-muted mt-0 mb-1">
+                                            Android
+                                            Developer
+                                            Intern</div>
+                                        <div class="section-subheading card-title exp-company text-muted my-0"><a
+                                                href="https://geniobits.com/" target="_blank"
+                                                rel="noopener">Geniobits</a>
+                                        </div>
+                                        <div class="text-muted exp-meta">
+                                            Dec 2019 –
+
+                                            March 2020
+
+                                            <span class="middot-divider"></span>
+                                            <span>Pune, IN</span>
+                                        </div>
+                                        <br>
+                                        <div class="card_text">Got Trained & Worked on Gym Mobile Android
+                                            Application.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="projects-section" class="home-section wg-portfolio  ">
+            <div class="home-section-bg "></div>
+            <div class="container">
+                <div class="row  ">
+                    <div
+                        class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+                        <h1 class="mb-0">Projects</h1>
+
+                    </div>
+                    <div class="col-12 col-lg-8">
+
+                        <div class="alert alert-note">
+
+                            <div>
+                                <span id='info-icon'>&#8505;</span>
+                                Explore all the projects <a href="./project/">here</a>.
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="isotope projects-container js-layout-masonry "
+                            style="position: relative; height: 354.362px;">
+
+                            <div class="project-card project-item isotope-item js-id-Transformer js-id-Generalization js-id-Cognitive-Science js-id-NLP"
+                                style="position: absolute; left: 0px; top: 0px;">
+                                <div class="card border-primary mb-2">
+                                    <a href="/project/feedback-and-memory-in-transformers/"
+                                        class="card-image hover-overlay">
+                                        <img src="/images/transportation_solution_trips_portal_image.png"
+                                            alt="Feedback and Memory in Transformers" id="proj-ts-image"
+                                            class="img-responsive " loading="lazy">
+                                    </a>
+
+                                    <div class="p-2">
+                                        <div class="card-header"><a
+                                                href="https://utkarshkumar387.github.io/Transportation_solutions/"
+                                                target="_blank" rel="noopener">Transportation
+                                                Solution</a></div>
+
+
+                                        <div class="article-style">
+                                            <div class="card-text project-desc-text  small" style="color: black;">My
+                                                final project submission was a transportation portal which includes
+                                                features such that transportation businessess can
+                                                manage there business through web or mobile application and will
+                                                provide real-time updates for tracking vehicles, managing documents,etc.
+                                            </div>
+                                        </div>
+
+                                        <div class="btn-links p-1">
+                                            <a class="btn btn-outline-primary btn-page-header btn-sm" href=""
+                                                target="_blank" rel="noopener">
+                                                Code
+                                            </a>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"
+        integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/deepjyot.js"></script>
+
+
+</body>
+
+</html>

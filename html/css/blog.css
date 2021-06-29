@@ -1,0 +1,68 @@
+
+
+
+/* *NAVBAR */
+#navbar-main{
+    background-color: 	#0093cb;
+    z-index: 10;
+    /* background-color: red; */
+}
+#navbar-main .navbar-nav li > a {
+	text-transform: capitalize;
+	color: #333;
+	transition: background-color .2s, color .2s;
+}
+
+/* !For active this is the css. */
+#navbar-main .navbar-nav li.active > a {
+	background-color: #333;
+	color: #fff;
+} 
+
+
+
+.bg-gradient-header {
+    width: 100%;
+    height: 80%;
+    background: linear-gradient(
+150deg
+,#080e7b 0%,#3c1da8 60%,#a23aff 100%);
+}
+
+.py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+
+.head-div{
+    padding-top: 4%;
+}
+
+
+.card-footer{
+    box-shadow: 2px;
+    color: grey;
+    background-color: #D3D3D3;
+}
+
+
+
+.author-name-text{
+    color: black;
+}
+
+.card-text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    line-height: 1.2;        /* fallback */
+    max-height: 2*2; 
+}
+
+.card-img-top{
+    height: 35vh;
+
+}

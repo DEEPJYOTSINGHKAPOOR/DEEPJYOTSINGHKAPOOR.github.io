@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DJ</title>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="/css/common.css">
+  <link rel="stylesheet" href="/css/light_theme.css">
+  <link rel="stylesheet" href="/css/<%=cssFileName%>.css">
+
+
+</head>
+
+
+<body>
+
+  <header>
+    <div class="page-header">
+
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+        <div class="container-xl">
+
+
+          <div class="d-none d-lg-inline-flex">
+            <a class="navbar-brand" href="/about"></a>
+          </div>
+
+
+
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content"
+            aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="fa fa-bars"></i></span>
+          </button>
+
+
+          <!-- !Wrap aside in mobile view. -->
+          <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+            <a class="navbar-brand" href="/">Deepjyot</a>
+          </div>
+
+
+
+          <div class="navbar-collapse main-menu-item collapse justify-content-center" id="navbar-content">
+
+
+            <ul class="navbar-nav d-md-inline-flex">
+              <!-- !Home -->
+              <li class="nav-item show" id="home-nav-li">
+                <!-- <a class="nav-link" href="#home-section" data-target="#home-section"><span>Home</span></a> -->
+                <!-- ! use on click to resolve this issue. -->
+                <a class="nav-link" href="/#home-section"><span>Home</span></a>
+              </li>
+              <!-- !About -->
+              <li class="nav-item" id="aboutme-nav-li">
+                <!-- <a class="nav-link" href="#aboutme-section" data-target="#aboutme-section"><span>About Me</span></a> -->
+                <a class="nav-link" href="/#aboutme-section"><span>About Me</span></a>
+              </li>
+              <!-- <li class="nav-item">
+                            <a class="nav-link " href="/#news" data-target="#news"><span>News</span></a>
+                        </li> -->
+
+              <li class="nav-item" id="experience-nav-li">
+                <a class="nav-link" href="/#experience-section"><span>Experience</span></a>
+              </li>
+
+
+              <li class="nav-item" id="projects-nav-li">
+                <a class="nav-link" href="/#projects-section"><span>Projects</span></a>
+              </li>
+
+
+
+              <li class="nav-item" id="blogs-nav-li">
+                <a class="nav-link" href="/blogs"><span>Blogs</span></a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+            <li class="nav-item dropdown theme-dropdown">
+              <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+                <i class="fa fa-moon-o" aria-hidden="true"></i>
+              </a>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item js-set-theme-light">
+                  <span>Light</span>
+                </a>
+                <a href="#" class="dropdown-item js-set-theme-dark dropdown-item-active">
+                  <span>Dark</span>
+                </a>
+                <!-- <input type="checkbox" name="theme" id="switch"><label for="switch">Toggle</label> -->
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
