@@ -54,3 +54,14 @@ project/
 
 
 //TODO EMbed git hub gist: https://betterstack.dev/blog/how-to-embed-a-github-gist-in-your-website/#:~:text=Embedding%20a%20gist%20into%20your,your%20gist%20after%20creating%20it.
+
+
+
+
+
+
+
+///heroku:
+
+// deploying from branch beside main: 
+// git push heroku testbranch:main

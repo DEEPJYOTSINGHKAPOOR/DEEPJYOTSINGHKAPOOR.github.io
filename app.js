@@ -39,6 +39,18 @@ let projects = [
          Able to achieve 75% accrucay.`,
         "/images/projects/cat.jpg"
     ),
+    new ProjectModel('Laundary Home- Android Application ',
+        'Android Mobile Application',
+        'Android',
+        'Mar-2021',
+        `Made a complete mobile application using native android which provides laundary services.Laundry App offers dry cleaning 
+        and other laundry services to the customer. Got selected as 
+        the best start up idea for college level SIH event.
+        Android app communicate with each other with help of REST API. 
+        Razorpay payment gateway was also integrated.
+        `,
+        "/images/projects/laundary_welcome_activity.jpeg"
+    ),
     new ProjectModel('Climate Prediction - Flutter Apllication', 'Flutter', 'set-state state management', 'Mar-2021',
         `Made a climate prediction application using open-weather's api, used
      set state state management to maintain the state of the ui 
