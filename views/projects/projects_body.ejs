@@ -1,0 +1,116 @@
+<div class="projects-section">
+    <% for(let i=0;i<projects.length ;i++){ %>
+        <br>
+        <br>
+        <% if(i !==0){ %>
+            <hr style="width:100px" ,size="5" , color=black>
+            <% } %>
+
+                <div class="container-fluid">
+
+                    <div class="row justify-content-center align-items-start">
+
+
+                        <% if(i%2===0){ %>
+
+                            <div class="col-lg-6">
+                                <img src="<%=projects[i].imageFileString%>" alt="cat image"
+                                    class="img-fluid img-responsive">
+                                <br>
+                                <br>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <h1>
+                                    <%= projects[i].projectTitle %>
+                                </h1>
+                                <br>
+                                <div class="row row--no-padding">
+                                    <div class="col-lg-6">
+                                        <div class="col-12">
+                                            <p class="subheading">
+                                                💼 Domain
+                                            </p>
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="summary-content">
+                                                <%= projects[i].domainName %>
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="col-12">
+                                            <p class="subheading">
+                                                👩🏻‍💻 Alogrithm/ Architecture
+                                            </p>
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="summary-content">
+                                                <%= projects[i].algorithms %>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <p class="project-desc">
+                                    <%= projects[i].projectDescription %>
+                                </p>
+                            </div>
+                            <% }else{ %>
+                                <div class="col-lg-6">
+                                    <h1>
+                                        <%= projects[i].projectTitle %>
+                                    </h1>
+                                    <br>
+                                    <div class="row row--no-padding">
+                                        <div class="col-lg-6">
+                                            <div class="col-12">
+                                                <p class="subheading">
+                                                    💼 Domain
+                                                </p>
+                                            </div>
+                                            <div class="col-12">
+                                                <p class="summary-content">
+                                                    <%= projects[i].domainName %>
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="col-12">
+                                                <p class="subheading">
+                                                    👩🏻‍💻 Alogrithm/ Architecture
+                                                </p>
+                                            </div>
+                                            <div class="col-12">
+                                                <p class="summary-content">
+                                                    <%= projects[i].algorithms %>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <p class="project-desc">
+                                        <%= projects[i].projectDescription %>
+                                    </p>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <img src="<%=projects[i].imageFileString%>" alt="cat image"
+                                        class="img-fluid img-responsive">
+                                    <br>
+                                    <br>
+                                </div>
+
+
+                                <% } %>
+
+
+
+
+                    </div>
+                </div>
+                <% } %>
+
+</div>

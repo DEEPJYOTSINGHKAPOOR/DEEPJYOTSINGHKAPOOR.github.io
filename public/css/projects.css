@@ -1,0 +1,19 @@
+.projects-section{
+    margin-top: 20px;
+}
+
+img{
+    vertical-align: middle;
+    height: 200px;
+    width: 80%;
+}
+
+
+.summary-content{
+    font-family: 'Pacifico';
+    font-size: x-large;
+}
+.project-desc{
+    font-family: 'Abel', sans-serif;
+    font-size: 2rem;
+}
