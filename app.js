@@ -32,13 +32,7 @@ let projects = [
      do a group chat with friends. For state management in flutter application, provider package is 
     used which guarantees clean and efficent code.`,
         "/images/projects/chat_login_signup.jpeg"),
-    new ProjectModel('Cat or Not?', 'Machine Learning',
-        'Logistic Regression, Image Processing', 'Mar-2021',
-        `Made a classification model to identify 
-        whether image is a cat or not.
-         Able to achieve 75% accrucay.`,
-        "/images/projects/cat.jpg"
-    ),
+  
     new ProjectModel('Laundary Home- Android Application ',
         'Android Mobile Application',
         'Android',
@@ -58,7 +52,9 @@ let projects = [
     to open-weather's api.`,
         "/images/projects/weather_MAIN.jpeg"
     ),
-    new ProjectModel('Transportation Solution', 'Flutter, Cloud Computing',
+    new ProjectModel(
+        'Transportation Solution',
+        'Flutter, Cloud Computing',
         'Bloc state management',
         'Mar-2021',
         `Converting the business onto the web is important to grow the business, thus 
@@ -68,10 +64,16 @@ let projects = [
     Some of the functionalities such as maintaining the truck data,
      driver data, trip data of the vehicle are to be managed.
     Moreover, some additional functionalities such as evaluating
-    expenses, giving real-time updates  can be also be provided to the client according to the requirement.
-    `,
+    expenses, giving real-time updates  can be also be provided to the client according to the requirement`,
         "/images/projects/transportation_solution_trips_portal_image.png"
     ),
+    new ProjectModel('Cat or Not?', 'Machine Learning',
+    'Logistic Regression, Image Processing', 'Mar-2021',
+    `Made a classification model to identify 
+    whether image is a cat or not.
+     Able to achieve 75% accrucay.`,
+    "/images/projects/cat.jpg"
+),
     new ProjectModel('Movie Reviews- Sentiment Analysis ',
         'NLP',
         'Sentiment Intensity Analyzer',
