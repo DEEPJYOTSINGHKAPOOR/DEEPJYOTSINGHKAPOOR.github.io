@@ -92,11 +92,10 @@ new ProjectModel('Quora Questions- Topic Modelling ',
         'Blockchain - Truffle, React, IoT(Raspberry Pi Zero Wireless and SKG13BL modules)',
         'Truffle Blockchain & Raspberry Pi',
         'Mar-2021',
-        `A React Webapp in which transactions of the business is stored in a smart contract using Truffle. Motivation behind this was from personal experience: one of
+        `A React Truffle based Webapp in which transactions of the business is stored in a smart contract using Truffle. Motivation behind this was from personal experience: one of
          my uncle being owner of the transportation business struggled keeping his transactions 
          in the register(notebook), where it was vulnerable to fraud by altering it. Moreover
-         , the second feature of the project was to find the
-          track the location of the vehicles for which we interfaced an
+         , the second feature of the project is to track the location of the vehicles for which we interfaced an
            SKG13BL GPS Module with a Raspberry Pi Zero Wireless.
             After making the proper connection and installing GPSD on
             Raspberry Pi, we were able to track the latitude and longitude of the vehicle.`,
