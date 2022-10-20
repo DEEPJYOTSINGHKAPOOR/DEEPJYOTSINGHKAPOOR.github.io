@@ -9,6 +9,7 @@ const ejs = require("ejs");
 
 const Blog = require('./models/blog_model');
 const ProjectModel = require('./models/projects_model');
+const ExperienceModel = require('./models/experience_model');
 
 
 //! Creating blog collection-->that has to satisfy the blogSchema
@@ -21,9 +22,43 @@ app.use(express.static("public"));
 
 
 
-let posts = [];
-
+let experiences  = [
+    new ExperienceModel('Jr. Full Stack Engineer','Cognizant','https://www.cognizant.com/in/en/', 'Sep21 - Present','Pune, IN',
+    [`Developed .Net Core Web API using Test Driven Development (TDD) based on business
+    requirements.`,`Worked with UI/UX designer and created Reactive Form with regex pattern
+    validations using Angular.`,`Worked with Quality Assurance team to assure product quality.`,`Developed Aws Lambda using .Net to invoke the DocuSign API.`]),
+    new ExperienceModel('Intern','Cognizant','https://www.cognizant.com/in/en/', 'Apr21 - Sep21','Pune, IN',
+    [`Got trained on full stack domains- Html, CSS, .NET MVC, .NET Core, Azure Cloud.`,
+    `Developed 4 Micro Services using .NET Core Web Api – Assessment Project.`,
+    `Authorized & Authenticated each API request using JWT Bearer Token Authentication.`
+    ]),
+    new ExperienceModel('Application Developer (Client Project)','Marwar Print','https://www.marwarprint.com/', 'Dec20 - Feb21','Pune, IN',
+    [`Developed the entire frontend of the application named ‘Marwar Print’ using flutter framework for the client
+    that has over 100K+ downloads on Google’s Play Store.`,`Used Flutter BLOC for state management and created REST API using Django
+    framework.`,`Interacted with backend team to consume the api's in the application.`]),
+    new ExperienceModel('Android Developer Intern','Geniobits Pvt Ltd','https://geniobits.com/', 'Dec19 - Feb20','Pune, IN',
+    [`Created bottom navigation menu using Material Design.`,`Used Recycler view in fragment to display the images.`,`Used Volley Library to send and receive API request and developed calendar using
+    calendar view to display the attendance of the user.`]),
+    
+];
 let projects = [
+    new ProjectModel('Movie Reviews- Sentiment Analysis ',
+    'NLP',
+    'Sentiment Intensity Analyzer',
+    'Mar-2021',
+    `Used sentiment analyzer from nltk's sentiment.vader package to 
+    analyze the  sentiments  of moview reviews. 
+    Able to achieve 70% of accuracy.`,
+    "/images/projects/movie_review_nlp.jpg"
+),
+new ProjectModel('Quora Questions- Topic Modelling ',
+    'NLP',
+    'NMF Topic Modelling Algorithm',
+    'Mar-2021',
+    `Used NMF topic modelling algorithm and 
+    segregated quora questions into 20 different topics.`,
+    "/images/projects/quora_image.jpg"
+),
     new ProjectModel('Chat Application Flutter', 'Flutter', "Provider Package, Firestore",
         "Mar-2020",
         `Created email chat application using Flutter framework where the
@@ -55,7 +90,7 @@ let projects = [
     new ProjectModel(
         'Transportation Solution',
         'Blockchain - Truffle, React, IoT(Raspberry Pi Zero Wireless and SKG13BL modules)',
-        'Bloc state management',
+        'Truffle Blockchain & Raspberry Pi',
         'Mar-2021',
         `A React Webapp in which transactions of the business is stored in a smart contract using Truffle. Motivation behind this was from personal experience: one of
          my uncle being owner of the transportation business struggled keeping his transactions 
@@ -74,23 +109,7 @@ let projects = [
      Able to achieve 75% accrucay.`,
     "/images/projects/cat.jpg"
 ),
-    new ProjectModel('Movie Reviews- Sentiment Analysis ',
-        'NLP',
-        'Sentiment Intensity Analyzer',
-        'Mar-2021',
-        `Used sentiment analyzer from nltk's sentiment.vader package to 
-        analyze the  sentiments  of moview reviews. 
-        Able to achieve 70% of accuracy.`,
-        "/images/projects/movie_review_nlp.jpg"
-    ),
-    new ProjectModel('Quora Questions- Topic Modelling ',
-        'NLP',
-        'NMF Topic Modelling Algorithm',
-        'Mar-2021',
-        `Used NMF topic modelling algorithm and 
-        segregated quora questions into 20 different topics.`,
-        "/images/projects/quora_image.jpg"
-    ),
+
 ];
 
 
@@ -110,7 +129,10 @@ app.set(
 );
 
 app.get("/", function (req, res) {
-    res.render("home_main");
+    console.log('exper is: '+experiences);
+    res.render("home_main",{
+        experiences: experiences
+    });
 });
 
 
@@ -118,7 +140,6 @@ app.get("/blogs", function (req, res) {
     res.render("blog_list_main", {
         posts: posts
     });
-    // res.send("hello");
 });
 
 //!Get a particular blog
@@ -148,11 +169,6 @@ app.route('/projects')
             projects: projects
         });
     });
-
-
-
-
-
 
 app.route('/blog_compose')
     .get(function (req, res) {
