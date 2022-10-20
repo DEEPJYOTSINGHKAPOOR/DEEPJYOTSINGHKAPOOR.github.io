@@ -54,17 +54,17 @@ let projects = [
     ),
     new ProjectModel(
         'Transportation Solution',
-        'Flutter, Cloud Computing',
+        'Blockchain - Truffle, React, IoT(Raspberry Pi Zero Wireless and SKG13BL modules)',
         'Bloc state management',
         'Mar-2021',
-        `Converting the business onto the web is important to grow the business, thus 
-    creating an online-based application is an important task. 
-    Generally, a transportation solution consists of features that can help a businessman to maintain & handle the data of the business 
-    by providing a good user interface with the required functionalities.
-    Some of the functionalities such as maintaining the truck data,
-     driver data, trip data of the vehicle are to be managed.
-    Moreover, some additional functionalities such as evaluating
-    expenses, giving real-time updates  can be also be provided to the client according to the requirement`,
+        `A React Webapp in which transactions of the business is stored in a smart contract using Truffle. Motivation behind this was from personal experience: one of
+         my uncle being owner of the transportation business struggled keeping his transactions 
+         in the register(notebook), where it was vulnerable to fraud by altering it. Moreover
+         , the second feature of the project was to find the
+          track the location of the vehicles for which we interfaced an
+           SKG13BL GPS Module with a Raspberry Pi Zero Wireless.
+            After making the proper connection and installing GPSD on
+            Raspberry Pi, we were able to track the latitude and longitude of the vehicle.`,
         "/images/projects/transportation_solution_trips_portal_image.png"
     ),
     new ProjectModel('Cat or Not?', 'Machine Learning',
@@ -204,7 +204,7 @@ app.route('/blog_compose')
 let port = process.env.PORT;
 
 if (port == null || port == "") {
-    port = 3000;
+    port = 4000;
 }
 
 
@@ -212,3 +212,4 @@ app.listen(port, function () {
     console.log("server has started");
     return;
 });
+
