@@ -191,7 +191,7 @@ p.institution{
     /* position: relative; */
     /* z-index: 0; */
     position: relative;
-    height: 100vh;
+    /* height: 100vh; */
     background: rgb(255, 255, 255);
     padding: 110px 0px;
 
