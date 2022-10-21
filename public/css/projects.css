@@ -8,7 +8,9 @@ img{
     width: 80%;
 }
 
-
+.tsheader{
+    font-weight: bold;
+}
 .summary-content{
     font-family: 'Pacifico';
     font-size: x-large;
