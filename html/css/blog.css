@@ -4,7 +4,7 @@
 /* *NAVBAR */
 #navbar-main{
     background-color: 	#0093cb;
-    z-index: 10;
+    z-index: 11;
     /* background-color: red; */
 }
 #navbar-main .navbar-nav li > a {
