@@ -10,9 +10,6 @@
 
       <div class="col-12 col-lg-8">
         <% for(let i=0;i<experiences.length ;i++){ %>
-
-
-
         <!-- !experience -1 row -->
         <div class="row experience">
           <!-- !For drawing line and dot content.  -->
@@ -32,7 +29,6 @@
               <span class="badge badge-pill border">&nbsp;</span>
               <% } %>
             </div>
-
             <% if(i!=experiences.length-1){ %> 
             <div class="row h-50">
               <div class="col border-right">&nbsp;</div>
@@ -40,7 +36,6 @@
             </div>
             <% } %> 
           </div>
-
           <!-- ! Row content experience -will hold the card.  -->
           <div class="col py-2">
             <div class="card">
@@ -53,7 +48,6 @@
                 </div>
                 <div class="text-muted exp-meta">
                   <%= experiences[i].experienceMonth%>
-
                   <span class="middot-divider"></span>
                   <span> . <%= experiences[i].jobLocation%></span>
                 </div>
@@ -64,15 +58,11 @@
                     <li><%= experiences[i].jobDescription[j]%></li>
                     <% } %>
                   </ul>
-
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-
-
         <% } %>
       </div>
     </div>
