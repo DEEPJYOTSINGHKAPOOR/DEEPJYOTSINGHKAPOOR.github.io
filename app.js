@@ -25,23 +25,80 @@ app.use(express.static("public"));
 let experiences  = [
     new ExperienceModel('Jr. Full Stack Engineer','Cognizant','https://www.cognizant.com/in/en/', 'Sep21 - Present','Pune, IN',
     [`Developed .Net Core Web API using Test Driven Development (TDD) based on business
-    requirements.`,`Worked with UI/UX designer and created Reactive Form with regex pattern
-    validations using Angular.`,`Worked with Quality Assurance team to assure product quality.`,`Developed Aws Lambda using .Net to invoke the DocuSign API.`]),
+    requirements.`,
+     `Worked with the Design architecture team and used Docusign connect
+      to invoke our Aws Lambda webhook after the
+       envelope was completed (e-Signature).` ,`Worked with UI/UX designer and created
+        Reactive Form with regex pattern
+    validations using Angular.`,
+    `Enhanced the user experience by adding new 
+    functionalities like auto-completion based on search result
+     and inline recommendations using
+    angular, which helped us gain agents(application users), making
+     it easier for them
+     to find what they were looking for.`
+    ]),
     new ExperienceModel('Intern','Cognizant','https://www.cognizant.com/in/en/', 'Apr21 - Sep21','Pune, IN',
-    [`Got trained on full stack domains- Html, CSS, .NET MVC, .NET Core, Azure Cloud.`,
-    `Developed 4 Micro Services using .NET Core Web Api – Assessment Project.`,
-    `Authorized & Authenticated each API request using JWT Bearer Token Authentication.`
+    [
+    `Handson on with various technologies 
+    in full stack engineering
+     domain - .Net Core, SQL Server, Micrsoft Azure`,
+    `Using 3-Tier Architecture, developed API to handle HTTP requests using .Net Core by following Test Driven 
+    Development (TDD) development practice and later tested using Swagger UI.`,
+    `Helped in improving the security and performance 
+    of our API layer with JWT Bearer Token by reducing
+     the overhead related to 
+    maintaining sessions for each request route since users
+     can be authenticated once their requests are
+      passed through this authentication process on a single API endpoint.`
     ]),
     new ExperienceModel('Application Developer (Client Project)','Marwar Print','https://www.marwarprint.com/', 'Dec20 - Feb21','Pune, IN',
-    [`Developed the entire frontend of the application named ‘Marwar Print’ using flutter framework for the client
-    that has over 100K+ downloads on Google’s Play Store.`,`Used Flutter BLOC for state management and created REST API using Django
-    framework.`,`Interacted with backend team to consume the api's in the application.`]),
+    [`Developed the entire frontend of the application named ‘Marwar Print’ using flutter SDK for the client
+    that has over 100K+ downloads on Google’s Play Store.`,
+    `Used Flutter BLOC for state management to handle interactions with UI and business logic`
+    ,`Interacted with backend team to consume the api's in the application.`,
+    `Used Cached Network image package to cache the network images offline and was able to increase the performance of retrival images by 70%`,
+]),
     new ExperienceModel('Android Developer Intern','Geniobits Pvt Ltd','https://geniobits.com/', 'Dec19 - Feb20','Pune, IN',
-    [`Created bottom navigation menu using Material Design.`,`Used Recycler view in fragment to display the images.`,`Used Volley Library to send and receive API request and developed calendar using
+    [`Assisted Senior Mobile application developers in development and troubleshooting.`,
+    `Responsible for implementing Recycler view in fragment to display the images.`
+    ,`Used Volley Library to send and receive API request and developed calendar using
     calendar view to display the attendance of the user.`]),
-    
 ];
 let projects = [
+    new ProjectModel('Laundary Home- Android Application ',
+        'Android Mobile Application',
+        'Native Android, Django , SqlLite, Volley, Google Map API',
+        'Mar-2021',`Made a complete end-to-end mobile application using native android 
+        which provides laundry services to the users.
+        The app helps users offer customers dry cleaning 
+        and other laundry services. Presented the application at college 
+        Smart India Hackathon(SIH) event, where it was awarded as the best startup idea.
+        Developed complete authentication flow with mobile OTP verification.
+        Used Android SQLite for local storage and Django to
+        create the rest API's with Django's default SQLite.
+        Integrated Google Maps API allows the user to select their location entered in the search.
+        Used Android's VOLLEY library to make an HTTP request with the backend server.
+        Segregated clothing items into 4 tabs - Top, Bottom, Household, Dress, and Tab Layout with View pager to display the items(with price) in their respective check.
+        Used fragment Created a feature where users can apply different promotions based on the order price. Integrated Razorpay payment gateway allows the user to make payments through the application.`,
+        "/images/projects/laundary_welcome_activity.jpeg"
+    ),
+    new ProjectModel(
+        'Transportation Solution',
+        'Blockchain - Truffle, React, IoT - Raspberry Pi Zero Wireless and SKG13BL module',
+        'Truffle Blockchain & Raspberry Pi',
+        'Mar-2021',
+        `A React Truffle based Webapp in which transactions of the business is stored in a smart contract using Truffle.
+         Motivation behind this was from personal experience: one of
+         my uncle owned a transportation business and faced many difficulties because 
+         the transactions he recorded in the book were often corrupted or altered by a degenerate
+          employee and the theft of gas(petrol) from the trucks he owned. Moreover, the second feature of the project is
+           to track the location of the vehicles for which we interfaced an
+           SKG13BL GPS Module with a Raspberry Pi Zero Wireless.
+            After making the proper connection and installing GPSD on
+            Raspberry Pi, we were able to display the latitude and longitude of the vehicle.`,
+        "/images/projects/transportation_solution_trips_portal_image.png"
+    ),
     new ProjectModel('Movie Reviews- Sentiment Analysis ',
     'NLP',
     'Sentiment Intensity Analyzer',
@@ -59,6 +116,14 @@ new ProjectModel('Quora Questions- Topic Modelling ',
     segregated quora questions into 20 different topics.`,
     "/images/projects/quora_image.jpg"
 ),
+new ProjectModel('Cat or Not?', 'Machine Learning',
+'Neural Network, Image Processing, Logistic Regression', 'Mar-2021',
+`Made a 5-L neural network classification model to identify 
+whether image is a cat or not with using ReLU activation for first 4 
+layers and Sigmoid activation for the last layer.
+I achieved a 78% accuracy rate through this approach, significantly higher than the 71% accuracy I achieved through just logistic regression.`,
+"/images/projects/cat.jpg"
+),
     new ProjectModel('Chat Application Flutter', 'Flutter', "Provider Package, Firestore",
         "Mar-2020",
         `Created email chat application using Flutter framework where the
@@ -68,46 +133,16 @@ new ProjectModel('Quora Questions- Topic Modelling ',
     used which guarantees clean and efficent code.`,
         "/images/projects/chat_login_signup.jpeg"),
   
-    new ProjectModel('Laundary Home- Android Application ',
-        'Android Mobile Application',
-        'Android',
-        'Mar-2021',
-        `Made a complete mobile application using native android which provides laundary services.Laundry App offers dry cleaning 
-        and other laundry services to the customer. Got selected as 
-        the best start up idea for college level SIH event.
-        Android app communicate with each other with help of REST API. 
-        Razorpay payment gateway was also integrated.
-        `,
-        "/images/projects/laundary_welcome_activity.jpeg"
-    ),
+    
     new ProjectModel('Climate Prediction - Flutter Apllication', 'Flutter', 'set-state state management', 'Mar-2021',
-        `Made a climate prediction application using open-weather's api, used
-     set state state management to maintain the state of the ui 
-    in flutter, also used dio package to make http request 
-    to open-weather's api.`,
+        `Made a climate prediction application using open-weather API, where the user can enter the city name and  obtain the temperature information and what type of clothes are suitable for that weather, used
+        set-state to manage the state of the UI 
+       in a flutter, also used the Dio package to make an HTTP request 
+       to Open-Weather's API.`,
         "/images/projects/weather_MAIN.jpeg"
     ),
-    new ProjectModel(
-        'Transportation Solution',
-        'Blockchain - Truffle, React, IoT(Raspberry Pi Zero Wireless and SKG13BL modules)',
-        'Truffle Blockchain & Raspberry Pi',
-        'Mar-2021',
-        `A React Truffle based Webapp in which transactions of the business is stored in a smart contract using Truffle. Motivation behind this was from personal experience: one of
-         my uncle being owner of the transportation business struggled keeping his transactions 
-         in the register(notebook), where it was vulnerable to fraud by altering it. Moreover
-         , the second feature of the project is to track the location of the vehicles for which we interfaced an
-           SKG13BL GPS Module with a Raspberry Pi Zero Wireless.
-            After making the proper connection and installing GPSD on
-            Raspberry Pi, we were able to track the latitude and longitude of the vehicle.`,
-        "/images/projects/transportation_solution_trips_portal_image.png"
-    ),
-    new ProjectModel('Cat or Not?', 'Machine Learning',
-    'Logistic Regression, Image Processing', 'Mar-2021',
-    `Made a classification model to identify 
-    whether image is a cat or not.
-     Able to achieve 75% accrucay.`,
-    "/images/projects/cat.jpg"
-),
+   
+ 
 
 ];
 
