@@ -134,7 +134,7 @@ I achieved a 78% accuracy rate through this approach, significantly higher than 
         "/images/projects/chat_login_signup.jpeg"),
   
     
-    new ProjectModel('Climate Prediction - Flutter Apllication', 'Flutter', 'set-state state management', 'Mar-2021',
+    new ProjectModel('Climate Prediction - Flutter Application', 'Flutter', 'set-state for State Management', 'Mar-2021',
         `Made a climate prediction application using open-weather API, where the user can enter the city name and  obtain the temperature information and what type of clothes are suitable for that weather, used
         set-state to manage the state of the UI 
        in a flutter, also used the Dio package to make an HTTP request 
