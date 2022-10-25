@@ -45,6 +45,10 @@
                 </div>
                 <div class="section-subheading card-title exp-company text-muted my-0">
                   <a href="<%= experiences[i].companyLink%>" target="_blank" rel="noopener"> <%= experiences[i].companyName  %> </a>
+                  <% if(experiences[i].companyName == 'Cognizant' && experiences[i].designationInCompany == 'Jr. Full Stack Engineer'){ %> 
+                    <br>
+                    Client Name: <a href="https://www.travelers.com/" target="_blank">Travelers Insurance</a> 
+                    <% } %> 
                 </div>
                 <div class="text-muted exp-meta">
                   <%= experiences[i].experienceMonth%>
