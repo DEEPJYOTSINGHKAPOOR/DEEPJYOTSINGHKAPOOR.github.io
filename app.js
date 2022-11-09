@@ -23,7 +23,8 @@ app.use(express.static("public"));
 
 
 let experiences  = [
-    new ExperienceModel('Jr. Full Stack Engineer','Cognizant','https://www.cognizant.com/in/en/', 'Sep21 - Present','Pune, IN',
+    new ExperienceModel('Jr. Full Stack Engineer','Cognizant','https://www.cognizant.com/in/en/', 'Sep21 - Present',
+    'Pune, IN',
     [`Developed .Net Core Web API using Test Driven Development (TDD) based on business
     requirements.`,
      `Worked with the Design architecture team and used Docusign connect
@@ -66,7 +67,25 @@ let experiences  = [
     calendar view to display the attendance of the user.`]),
 ];
 let projects = [
-    new ProjectModel('Laundary Home- Android Application ',
+    new ProjectModel('Audit Management',
+    'Web Application',
+    '.Net Core, Angular, Azure Pipeline, Docker container, Azure SQL',
+    'Aug-2021',
+    `Made a Audit Management where the users can answer(Yes/No) the questions,
+    which are fetched from Azure Sql database. 
+    Created 4 different microservice - 
+    i) Audit Severity: Logic to pass or fail the audit based on the answers.
+    ii) Audit Benchmark:Provides  minimum standard for audit to pass.
+    iii) Audit Checklist: Provides questions and correct answers
+    iv) Audit Authentication: Singled endpoint to authorize and authenticate the API requests using JWT.
+    The web-app helps supply chain businesses to manage questions.
+    Containerized the services using docker and used Azure Pipeline to deploy them.
+    Created beautiful SPA using Angular with features like routing and proper error-handling, and deployed using Azure static web app.
+    `,
+    [ "/images/projects/audit-management.png" ,"/images/projects/audit-management-2.png"],
+    "https://drive.google.com/drive/folders/157AQJBvxcdfp2WA4NdClCbE-fsQIc94R?usp=sharing"
+),
+    new ProjectModel('Washkar- Laundary Android Application ',
         'Android Mobile Application',
         'Native Android, Django , SqlLite, Volley, Google Map API',
         'Mar-2021',`Made a complete end-to-end mobile application using native android 
@@ -81,8 +100,18 @@ let projects = [
         Used Android's VOLLEY library to make an HTTP request with the backend server.
         Segregated clothing items into 4 tabs - Top, Bottom, Household, Dress, and Tab Layout with View pager to display the items(with price) in their respective check.
         Used fragment Created a feature where users can apply different promotions based on the order price. Integrated Razorpay payment gateway allows the user to make payments through the application.`,
-        "/images/projects/laundary_welcome_activity.jpeg"
+        ["/images/projects/laundary_welcome_activity.jpeg"]
     ),
+    new ProjectModel('Lets Tweet',
+    ' Web Application',
+    'Django, AWS Lambda, API Gateway, Mongo DB, AWS S3',
+    'April-2020',`
+    Created a Twitter clone as part of Web Technology project, 
+    using Django to create APIs, React for front-end, Mongo Db as Database and finally 
+    hosted API's using AWS Lambda and hosted static front-end using AWS S3.
+    `,
+    [ "/images/projects/lets-tweet-1.png" ,"/images/projects/lets-tweet-2.png"]
+),
     new ProjectModel(
         'Transportation Solution',
         'Blockchain - Truffle, React, IoT - Raspberry Pi Zero Wireless and SKG13BL module',
@@ -97,49 +126,55 @@ let projects = [
            SKG13BL GPS Module with a Raspberry Pi Zero Wireless.
             After making the proper connection and installing GPSD on
             Raspberry Pi, we were able to display the latitude and longitude of the vehicle.`,
-        "/images/projects/transportation_solution_trips_portal_image.png"
+        ["/images/projects/transportation_solution_trips_portal_image.png"]
     ),
     new ProjectModel('Movie Reviews- Sentiment Analysis ',
     'NLP',
     'Sentiment Intensity Analyzer',
-    'Mar-2021',
+    'Feb-2022',
     `Used sentiment analyzer from nltk's sentiment.vader package to 
     analyze the  sentiments  of moview reviews. 
     Able to achieve 70% of accuracy.`,
-    "/images/projects/movie_review_nlp.jpg"
+    ["/images/projects/movie_review_nlp.jpg"]
 ),
+new ProjectModel('Spam Or Legitimate?',
+'NLP', 'TF-IDF Vectorizer',
+'Mar-2022',
+`Used sci-kit learn Pipeline to perform removing stop words, tokenization, lemmatization, TF-IDF vectorization and used Linear SVC model over 8000 
+emails and was able to achieve an accuracy of 94.8%.`,["/images/projects/spam-email.jpg"]),
 new ProjectModel('Quora Questions- Topic Modelling ',
     'NLP',
     'NMF Topic Modelling Algorithm',
-    'Mar-2021',
+    'Mar-2022',
     `Used NMF topic modelling algorithm and 
     segregated quora questions into 20 different topics.`,
-    "/images/projects/quora_image.jpg"
+    ["/images/projects/quora_image.jpg"]
 ),
+
 new ProjectModel('Cat or Not?', 'Machine Learning',
 'Neural Network, Image Processing, Logistic Regression', 'Mar-2021',
 `Made a 5-L neural network classification model to identify 
 whether image is a cat or not with using ReLU activation for first 4 
 layers and Sigmoid activation for the last layer.
 I achieved a 78% accuracy rate through this approach, significantly higher than the 71% accuracy I achieved through just logistic regression.`,
-"/images/projects/cat.jpg"
+["/images/projects/cat.jpg"]
 ),
     new ProjectModel('Chat Application Flutter', 'Flutter', "Provider Package, Firestore",
-        "Mar-2020",
+        "May-2020",
         `Created email chat application using Flutter framework where the
      user can authenticate itself. The authentication service of google's firebase is used.
     Also, UI created is user friendly with letting the user know the time of message in the group and
      do a group chat with friends. For state management in flutter application, provider package is 
     used which guarantees clean and efficent code.`,
-        "/images/projects/chat_login_signup.jpeg"),
+        ["/images/projects/chat_login_signup.jpeg"]),
   
     
-    new ProjectModel('Climate Prediction - Flutter Application', 'Flutter', 'set-state for State Management', 'Mar-2021',
+    new ProjectModel('Climate Prediction - Flutter Application', 'Flutter', 'set-state for State Management', 'May-2020',
         `Made a climate prediction application using open-weather API, where the user can enter the city name and  obtain the temperature information and what type of clothes are suitable for that weather, used
         set-state to manage the state of the UI 
        in a flutter, also used the Dio package to make an HTTP request 
        to Open-Weather's API.`,
-        "/images/projects/weather_MAIN.jpeg"
+        ["/images/projects/weather_MAIN.jpeg"]
     ),
    
  
