@@ -14,10 +14,12 @@
                         <% if(i%2===0){ %>
 
                             <div class="col-lg-6">
-                                <img src="<%=projects[i].imageFileString%>" alt="cat image"
+                                <% for(let j=0;j< projects[i].imagesFileString.length;j++){ %> 
+                                <img src="<%=projects[i].imagesFileString[j]%>" alt="cat image"
                                     class="img-fluid img-responsive">
                                 <br>
                                 <br>
+                                <% } %> 
                             </div>
 
                             <div class="col-lg-6">
@@ -36,6 +38,10 @@
                                             <p class="summary-content">
                                                 <%= projects[i].domainName %>
 
+                                                <% if(projects[i].specialLink !=null){ %> 
+                                                    <br>
+                                                    <a  target="_blank" href="<%= projects[i].specialLink %>">Presentation Link</a>
+                                                <% } %> 
                                             </p>
                                         </div>
                                     </div>
@@ -97,10 +103,12 @@
                                 </div>
 
                                 <div class="col-lg-6">
-                                    <img src="<%=projects[i].imageFileString%>" alt="cat image"
+                                    <% for(let k=0;k<projects[i].imagesFileString.length;k++){ %> 
+                                    <img src="<%=projects[i].imagesFileString[k]%>" alt="cat image"
                                         class="img-fluid img-responsive">
                                     <br>
                                     <br>
+                                    <% } %> 
                                 </div>
 
 
@@ -114,3 +122,4 @@
                 <% } %>
 
 </div>
+

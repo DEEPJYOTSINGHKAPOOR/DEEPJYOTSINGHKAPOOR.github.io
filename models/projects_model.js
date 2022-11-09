@@ -1,11 +1,12 @@
 class ProjectModel {
-    constructor(projectTitle, domainName, algorithms, date , projectDescription, imageFileString) {
+    constructor(projectTitle, domainName, algorithms, date , projectDescription, imagesFileString, specialLink) {
         this.projectTitle = projectTitle ;
         this.domainName = domainName ;
         this.algorithms = algorithms ;
         this.date = date;
         this.projectDescription = projectDescription ;
-        this.imageFileString = imageFileString ;
+        this.imagesFileString = imagesFileString ;
+        this.specialLink = specialLink;
     }
     toString() {
         return `
