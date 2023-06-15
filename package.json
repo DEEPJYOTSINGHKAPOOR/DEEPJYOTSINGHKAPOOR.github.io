@@ -9,7 +9,7 @@
   "author": "Deepjyot",
   "license": "ISC",
   "engines": {
-    "node": "14.17.0"
+    "node": "18.16.0"
   },
   "dependencies": {
     "ejs": "^3.1.9",
