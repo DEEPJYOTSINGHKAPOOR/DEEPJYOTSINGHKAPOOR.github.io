@@ -23,7 +23,7 @@ app.use(express.static("public"));
 
 
 let experiences  = [
-    new ExperienceModel('Jr. Full Stack Engineer','Cognizant','https://www.cognizant.com/in/en/', 'Sep21 - Present',
+    new ExperienceModel('Software Engineer','Cognizant','https://www.cognizant.com/in/en/', 'Sep21 - Present',
     'Pune, IN',
     [`Developed .Net Core Web API using Test Driven Development (TDD) based on business
     requirements.`,
